@@ -14,7 +14,7 @@ function Skills() {
         start: "top 60%",          // Start when the element enters 80% of viewport
         end: "top 40%",            // End when it reaches 40%
         toggleActions: "play none none reverse",  // Replays when scrolled back
-        markers: true, 
+
     }
 
     })

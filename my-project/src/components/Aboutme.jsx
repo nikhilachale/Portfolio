@@ -44,7 +44,7 @@ function Aboutme() {
         start: 'top 70%',
         end: 'top 50%',
         toggleActions: 'play none none reverse',
-        markers: true,
+
       },
     });
   }, []);

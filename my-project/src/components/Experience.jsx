@@ -13,7 +13,7 @@ function Experience() {
         start: "top 60%",
         end: "top 40%",
         toggleActions: "play none none reverse",
-        markers: true,
+
       },
     });
 
