@@ -17,6 +17,7 @@ function App() {
 
   return (
     <>
+    <div className="bg-black">
     <Cursor/>
 <Header/>
 <Main/>
@@ -25,6 +26,7 @@ function App() {
 <Experience/>
 
 <Footer/>
+</div>
     </>
   )
 }

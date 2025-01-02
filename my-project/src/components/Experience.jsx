@@ -49,7 +49,7 @@ function Experience() {
           className="w-96 h-64 bg-cover bg-center text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
           style={{
             backgroundImage: `url(https://plus.unsplash.com/premium_vector-1682269851373-65c8474a4f55?q=80&w=3214&auto=format&fit=crop&ixlib=rb-4.0.3)`,
-            filter: 'brightness(60%)',
+            filter: 'brightness(90%)',
           }}
         >
           <a
@@ -68,7 +68,7 @@ function Experience() {
           className="w-96 h-64 bg-cover bg-center text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
           style={{
             backgroundImage: `url(https://plus.unsplash.com/premium_vector-1683134313621-c2aaa27f8c28?q=80&w=2904&auto=format&fit=crop&ixlib=rb-4.0.3)`,
-            filter: 'brightness(60%)',
+            filter: 'brightness(90%)',
           }}
         >
           <a

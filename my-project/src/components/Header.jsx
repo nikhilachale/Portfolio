@@ -13,7 +13,7 @@ function Header() {
       gsap.from([portref.current,contref.current],{
         y:-50,
         duration:.5,
-        delay:1,
+        delay:.5,
         ease:"back.out(1)"
       })
     })
