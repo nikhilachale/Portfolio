@@ -4,38 +4,38 @@ import React, { useRef } from 'react';
 
 function Skills() {
 
-  const hdref=useRef(null);
-  const cardref=useRef(null);
+  const hdref = useRef(null);
+  const cardref = useRef(null);
 
-  useGSAP(()=>{
-    var tl=gsap.timeline({
+  useGSAP(() => {
+    var tl = gsap.timeline({
       scrollTrigger: {
         trigger: hdref.current,  // Trigger the animation on this element
         start: "top 60%",          // Start when the element enters 80% of viewport
         end: "top 40%",            // End when it reaches 40%
         toggleActions: "play none none reverse",  // Replays when scrolled back
 
-    }
+      }
 
     })
-    tl.from ([hdref.current],{
+    tl.from([hdref.current], {
       opacity: 0,
       y: 100,  // Heading slides up from below
       duration: .5,
-      })
-      tl.from ([cardref.current],{
-        opacity: 0,
-        y: 100,  // Heading slides up from below
-        duration: .5,
-        })
+    })
+    tl.from([cardref.current], {
+      opacity: 0,
+      y: 100,  // Heading slides up from below
+      duration: .5,
+    })
 
   })
 
-   
+
 
   return (
-    <section  className="py-12 bg-black">
-      <h2  ref={hdref} className="text-6xl text-center text-white font-bold mb-12">My Skills</h2>
+    <section className="py-12 bg-black">
+      <h2 ref={hdref} className="text-6xl text-center text-white font-bold mb-12">My Skills</h2>
 
       <div ref={cardref} className="flex flex-wrap justify-center gap-8">
         {/* Skill Card: React */}
