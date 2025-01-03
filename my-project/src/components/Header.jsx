@@ -28,7 +28,7 @@ function Header() {
           </div>
 
 
-          <div  ref={contref} className="hidden md:flex md:items-center md:space-x-8">
+       {/*  <div  ref={contref} className="hidden md:flex md:items-center md:space-x-8">
             <a href="#" className="text-white text-lg hover:text-blue-200">
               About Me
             </a>
@@ -38,7 +38,9 @@ function Header() {
             <a href="#" className="text-white text-lg hover:text-blue-200">
               Stack
             </a>
-          </div>
+          </div> 
+
+          */}
 
           {/* Mobile Menu (Optional) */}
           <div className="md:hidden flex items-center">
