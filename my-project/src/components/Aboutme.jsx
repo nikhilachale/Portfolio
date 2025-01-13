@@ -23,8 +23,9 @@ function Aboutme() {
       duration: 0.5,
       scrollTrigger: {
         trigger: headref.current,
-        start: 'top 60%',
-        end: 'top 40%',
+        start: 'top 90%',
+       
+
         toggleActions: 'play none none reverse',
       },
     });
@@ -36,8 +37,8 @@ function Aboutme() {
       stagger: 0.03,
       scrollTrigger: {
         trigger: textref.current,
-        start: 'top 70%',
-        end: 'top 50%',
+        start: 'top 90%',
+        end: 'top 55%',
         toggleActions: 'play none none reverse',
       },
     });

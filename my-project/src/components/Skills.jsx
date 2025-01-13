@@ -10,7 +10,7 @@ function Skills() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: hdref.current,
-        start: "top 60%",
+        start: "top 90%",
         end: "top 40%",
         toggleActions: "play none none reverse",
       },
@@ -83,6 +83,18 @@ function Skills() {
         <div className="w-full bg-white shadow-lg rounded-xl p-6 flex flex-col items-center justify-center hover:shadow-2xl transition-all duration-300">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" className="w-24 h-24 mb-4" />
           <h3 className="text-xl font-semibold">C</h3>
+        </div>
+
+        {/* Skill Card: JavaScript */}
+        <div className="w-full bg-white shadow-lg rounded-xl p-6 flex flex-col items-center justify-center hover:shadow-2xl transition-all duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-24 h-24 mb-4" />
+          <h3 className="text-xl font-semibold">JavaScript</h3>
+        </div>
+
+        {/* Skill Card: TypeScript */}
+        <div className="w-full bg-white shadow-lg rounded-xl p-6 flex flex-col items-center justify-center hover:shadow-2xl transition-all duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-24 h-24 mb-4" />
+          <h3 className="text-xl font-semibold">TypeScript</h3>
         </div>
       </div>
     </section>

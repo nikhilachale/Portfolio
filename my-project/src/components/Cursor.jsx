@@ -10,7 +10,7 @@ function Cursor() {
             gsap.to(cursorRef.current, {
                 x: x,
                 y: y,
-                duration: 2,
+                duration: 1.2,
                 ease: "back.out(1)"
             });
         };

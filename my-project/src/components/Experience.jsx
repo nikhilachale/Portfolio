@@ -10,7 +10,7 @@ function Experience() {
     var tl = gsap.timeline({
       scrollTrigger: {
         trigger: hdref.current,
-        start: "top 60%",
+        start: "top 90%",
         end: "top 40%",
         toggleActions: "play none none reverse",
 

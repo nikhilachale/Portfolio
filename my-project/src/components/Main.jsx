@@ -12,7 +12,9 @@ function Main() {
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },  // Start with opacity 0
-      { opacity: 1, duration: 1.8, ease: "power2.out" }  // Fade in to full opacity
+      { opacity: 1, duration: 1, ease: "back.out" 
+        
+      }  // Fade in to full opacity
     );
 
     // Text Animation
@@ -41,21 +43,45 @@ function Main() {
       >
         {/* SVG Line and Social Links */}
         <div className="fixed p-2 top-6 right-6 sm:top-10 sm:right-10">
-          <div className="flex flex-col mt-2 items-center space-y-4 sm:space-y-6">
-            <a href="https://github.com/nikhilachale" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github fa-2x sm:fa-3x hover:text-gray-300 transition-all duration-300"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/nikhil-achale-b398aa195/" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin fa-2x sm:fa-3x hover:text-gray-300 transition-all duration-300"></i>
-            </a>
-            <a href="mailto:nikhilsmailbox01@gmail.com" target="_blank" rel="noopener noreferrer">
-              <i className="fas fa-envelope fa-2x sm:fa-3x hover:text-gray-300 transition-all duration-300"></i>
-            </a>
-            <a href="https://wa.me/7691912890" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-whatsapp fa-2x sm:fa-3x hover:text-gray-300 transition-all duration-300"></i>
-            </a>
-          </div>
-        </div>
+      <div className="flex flex-col mt-2 items-center space-y-4 sm:space-y-6">
+        {/* GitHub */}
+        <a
+          href="https://github.com/nikhilachale"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white "
+        >
+          <i className="fab fa-github fa-2x sm:fa-3x"></i>
+        </a>
+        {/* LinkedIn */}
+        <a
+          href="https://www.linkedin.com/in/nikhil-achale-b398aa195/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-400 transition-all duration-300"
+        >
+          <i className="fab fa-linkedin fa-2x sm:fa-3x"></i>
+        </a>
+        {/* Email */}
+        <a
+          href="mailto:nikhilsmailbox01@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-red-600 hover:text-red-400 transition-all duration-300"
+        >
+          <i className="fas fa-envelope fa-2x sm:fa-3x"></i>
+        </a>
+        {/* WhatsApp */}
+        <a
+          href="https://wa.me/7691912890"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-green-500 hover:text-green-400 transition-all duration-300"
+        >
+          <i className="fab fa-whatsapp fa-2x sm:fa-3x"></i>
+        </a>
+      </div>
+    </div>
 
         {/* Main Text Section */}
         <div ref={nameref} className="container">
