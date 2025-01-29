@@ -55,7 +55,7 @@ function Aboutme() {
           <img
             src={Me}
             alt="Nikhil Achale"
-            className="rounded-full w-48 sm:w-56 md:w-64 lg:w-72 h-48 sm:h-56 md:h-64 lg:h-72 object-cover shadow-xl"
+            className="rounded-full w-80 sm:w-56 md:w-64 lg:w-72 h-80 sm:h-56 md:h-64 lg:h-72 object-cover shadow-xl"
           />
         </div>
 

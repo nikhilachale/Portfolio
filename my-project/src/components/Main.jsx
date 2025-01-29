@@ -42,14 +42,15 @@ function Main() {
         style={{ backgroundImage: `url(${Coverimg})` }}
       >
         {/* SVG Line and Social Links */}
-        <div className="fixed p-2 top-6 right-6 sm:top-10 sm:right-10">
+        <div className="fixed z-30 p-2 top-6 right-6 sm:top-10 sm:right-10">
       <div className="flex flex-col mt-2 items-center space-y-4 sm:space-y-6">
         {/* GitHub */}
         <a
           href="https://github.com/nikhilachale"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white "
+          className="text-gray-300"
+
         >
           <i className="fab fa-github fa-2x sm:fa-3x"></i>
         </a>

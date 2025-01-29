@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-    <div className="bg-black">
+    <div>
     <Cursor/>
 <Header/>
 <Main/>
@@ -32,3 +32,4 @@ function App() {
 }
 
 export default App
+

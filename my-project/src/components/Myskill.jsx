@@ -5,7 +5,7 @@ function Myskill() {
   return (
      <section className="py-12 h-screen">
           
-        <Skills/>
+        <Skills className="overflow-x-hidden"/>
         </section>
   )
 }

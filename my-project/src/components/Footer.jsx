@@ -6,7 +6,7 @@ function Footer() {
   useGSAP(() => {
     gsap.from(".name", {
       y: 100,
-      y:100,
+     
       duration:1,
       loop:true,
       delay:3
