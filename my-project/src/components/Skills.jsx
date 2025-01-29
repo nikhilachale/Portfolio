@@ -22,7 +22,7 @@ function Skills() {
       scrollTrigger: {
         trigger: ref.current, // ✅ Correct reference
         scroller: "body",
-        markers: true,
+        markers: false,
         start: "top 0%", // ✅ Adjust start position
         end: "top -150%", // ✅ Adjust end position
         scrub: 2,
@@ -36,7 +36,7 @@ function Skills() {
    
       
       <div ref={ref} className="box">
-      <div className="bg-white text-7xl font-extrabold fixed right-10 uppercase ">
+      <div className="bg-white text-7xl font-extrabold fixed right-20 uppercase ">
       <h1>Skills</h1>
     </div>
         <div className="card">

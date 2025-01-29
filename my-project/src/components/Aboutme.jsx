@@ -23,7 +23,8 @@ function Aboutme() {
       duration: 0.5,
       scrollTrigger: {
         trigger: headref.current,
-        start: 'top 90%',
+        start: 'top 70%',
+        
        
 
         toggleActions: 'play none none reverse',
@@ -37,7 +38,7 @@ function Aboutme() {
       stagger: 0.03,
       scrollTrigger: {
         trigger: textref.current,
-        start: 'top 90%',
+        start: 'top 70%',
         end: 'top 55%',
         toggleActions: 'play none none reverse',
       },
@@ -45,7 +46,7 @@ function Aboutme() {
   }, []);
 
   return (
-    <section className="py-12 bg-black min-h-screen flex flex-col justify-center">
+    <section className="py-12 bg-black h-screen min-h-screen flex flex-col justify-center">
       <h2 ref={headref} className="text-5xl md:text-6xl text-white text-center font-bold mb-8 md:mb-12">
         About Me
       </h2>
