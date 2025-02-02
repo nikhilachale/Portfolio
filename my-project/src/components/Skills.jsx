@@ -14,7 +14,7 @@ function Skills() {
 
   useGSAP(() => {
     gsap.to(ref.current, {
-      x: "-140%",
+      x: "-210%",
       opacity: 1,
       duration: 1.5,
       ease: "power2.out",
@@ -36,7 +36,7 @@ function Skills() {
    
       
       <div ref={ref} className="box">
-      <div className="bg-white text-7xl font-extrabold fixed right-20 uppercase ">
+      <div className="bg-white text-7xl font-extrabold fixed right-40 uppercase ">
       <h1>Skills</h1>
     </div>
         <div className="card">
@@ -109,6 +109,31 @@ function Skills() {
           />
           <h3>TypeScript</h3>
         </div>
+
+        <div className="card">
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+    alt="PostgreSQL"
+  />
+  <h3>PostgreSQL</h3>
+</div>
+
+<div className="card">
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+    alt="Git"
+  />
+  <h3>Git</h3>
+</div>
+
+<div className="card">
+  <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+    alt="Docker"
+  />
+  <h3>Docker</h3>
+</div>
+        
       </div>
     </>
   );
