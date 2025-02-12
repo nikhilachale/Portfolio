@@ -86,7 +86,7 @@ function Main() {
 
         {/* Main Text Section */}
         <div ref={nameref} className="container">
-          <p className="text-4xl sm:text-5xl mt-2">
+        <p className="text-4xl sm:text-5xl mt-2">
             I am Nikhil Achale
           </p>
 

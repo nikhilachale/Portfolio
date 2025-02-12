@@ -11,6 +11,7 @@ import Experience from './components/Experience'
 import Footer from './components/Footer'
 import Cursor from './components/Cursor'
 import Chatbot from './components/Chatbot'
+import Projects from './components/Projects'
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
 <Aboutme/>
 <Skills/>
 <Experience/>
-
+<Projects/>
 <Footer/>
 </div>
     </>
