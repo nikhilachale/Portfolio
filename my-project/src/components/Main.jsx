@@ -85,7 +85,7 @@ function Main() {
     </div>
 
         {/* Main Text Section */}
-        <div ref={nameref} className="container">
+        <div ref={nameref} className="container  bg-gradient-to-r from-neutral-500  to-neutral-100 bg-clip-text text-transparent">
         <p className="text-4xl sm:text-5xl mt-2">
             I am Nikhil Achale
           </p>
