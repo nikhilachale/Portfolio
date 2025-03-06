@@ -15,10 +15,10 @@ function Footer() {
 
   return (
     <footer className="bg-black flex justify-center items-center p-6 mt-1">
-      <h2 className="name text-3xl md:text-4xl lg:text-5xl text-white  tracking-widest">
-        NIKHIL ACHALE
-      </h2>
-    </footer>
+  <h2 className="name text-xl md:text-xl lg:text-xl tracking-widest bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent">
+    NIKHIL ACHALE
+  </h2>
+</footer>
   );
 }
 
