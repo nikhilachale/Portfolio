@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-    <div>
+    <div className='bg-black'>
     <Cursor/>
 <Header/>
 <Main/>

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Coverimg from '../images/bg.jpg';
+import Coverimg from '../images/bgg.jpg';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
@@ -38,8 +38,8 @@ function Main() {
     <div>
       <section
         ref={sectionRef}
-        className="h-screen flex flex-col items-center justify-center text-white text-center bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${Coverimg})` }}
+        className="h-screen  bg-black flex flex-col items-center justify-center text-white text-center bg-cover bg-center relative"
+       
       >
         {/* SVG Line and Social Links */}
         <div className="fixed z-30 p-2 top-6 right-6 sm:top-10 sm:right-10">

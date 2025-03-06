@@ -29,24 +29,26 @@ function Projects() {
     ];
 
     return (
-        <div className="w-screen h-screen mx-auto px-6 py-10">
-            <h2 className="text-5xl pt-7 font-bold text-center mb-6">Projects</h2>
-            <div className="grid pt-7 md:grid-cols-3 gap-6">
+        <div className="w-full px-4 py-10">
+<h2 className="text-4xl md:text-5xl font-bold text-center mb-8 bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent">
+  Projects
+</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
-                    <div key={index} className="border border-gray-200 rounded-lg p-4 shadow-md bg-white">
+                    <div key={index} className=" rounded-lg p-4 shadow-md bg-gray-900">
                         <img 
                             src={project.img} 
                             alt={project.title} 
-                            className="w-full h-40 object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+                            className="w-full h-48 md:h-40 object-cover rounded-lg mb-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg"
                         />
-                        <h3 className="text-xl font-semibold">{project.title}</h3>
-                        <p className="text-gray-600 text-sm mt-2">{project.description}</p>
+                        <h3 className="text-xl text-neutral-200 font-semibold">{project.title}</h3>
+                        <p className="text-gray-300 text-sm mt-2">{project.description}</p>
                         <div className="mt-3 flex flex-wrap gap-2">
                             {project.tags.map((tag, i) => (
                                 <span key={i} className="text-xs bg-gray-200 px-2 py-1 rounded-md">{tag}</span>
                             ))}
                         </div>
-                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="mt-4 block text-blue-600 hover:underline">
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="mt-4 block text-green-600 hover:underline">
                             View on GitHub →
                         </a>
                     </div>

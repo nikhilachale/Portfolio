@@ -23,9 +23,9 @@ function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
 
-          <div className="flex-shrink-0">
-            <h1   ref={portref} className=" text-3xl font-bold text-white">Portfolio</h1>
-          </div>
+        <h1 ref={portref} className="text-3xl font-bold bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent">
+  Portfolio
+</h1>
 
 
        {/*  <div  ref={contref} className="hidden md:flex md:items-center md:space-x-8">

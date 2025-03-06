@@ -5,57 +5,70 @@ import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-import './style.css';
+import "./style.css";
 
 function Skills() {
   const ref = useRef(null);
 
   useGSAP(() => {
-    gsap.to(ref.current, {
-      x: "-210%",
-      opacity: 1,
-      duration: 1.5,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: ref.current,
-        scroller: "body",
-        markers: false,
-        start: "top 0%",
-        end: "top -150%",
-        scrub: 2,
-        pin: true,
-      },
-    });
+    if (window.innerWidth >= 768) { // Apply animation only on desktop
+      gsap.to(ref.current, {
+        x: "-210%",
+        opacity: 1,
+        duration: 1.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ref.current,
+          scroller: "body",
+          start: "top 0%",
+          end: "top -150%",
+          scrub: 2,
+          pin: true,
+        },
+      });
+    }
   }, []);
 
   return (
-    <>
-      {/* Animated Skills Section - Visible only on Desktop */}
+    <div className="bg-black text-neutral-200 min-h-screen overflow-x-hidden">
+      {/* Animated Skills Section - Desktop Only */}
       <div ref={ref} className="hidden md:block">
-        <div className="bg-white text-7xl font-extrabold fixed right-40 uppercase">
-          <h1>Skills</h1>
-        </div>
-        <div className="box flex space-x-8">
-          {/* Skill Cards */}
+      <div className="text-7xl font-extrabold fixed right-40 uppercase bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent">
+  <h1>Skills</h1>
+</div>
+        <div className="box flex space-x-8 mt-20">
           {skills.map((skill, index) => (
-            <div key={index} className="card">
-              <img src={skill.icon} alt={skill.name} />
-              <h3>{skill.name}</h3>
+            <div 
+              key={index} 
+              className="card bg-black p-4 rounded-lg shadow-lg hover:scale-105 transition-all duration-300"
+            >
+              <img src={skill.icon} alt={skill.name} className="w-20 h-20" />
+              <h3 className="text-neutral-200 text-lg font-semibold mt-2">
+                {skill.name}
+              </h3>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Simple Grid Layout for Mobile & Tablets */}
+      {/* Static Grid Layout for Mobile & Tablets */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 p-6 md:hidden">
+      <div className="col-span-full text-center text-4xl font-extrabold uppercase mb-4 bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent">
+  <h1>Skills</h1>
+</div>
         {skills.map((skill, index) => (
-          <div key={index} className="flex flex-col items-center space-y-2">
+          <div 
+            key={index} 
+            className="flex flex-col items-center space-y-2 bg-black shadow-lg p-4 rounded-lg hover:scale-105 transition-all duration-300"
+          >
             <img src={skill.icon} alt={skill.name} className="w-16 h-16" />
-            <h3 className="text-lg font-semibold">{skill.name}</h3>
+            <h3 className="text-neutral-200 text-lg font-semibold">
+              {skill.name}
+            </h3>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
