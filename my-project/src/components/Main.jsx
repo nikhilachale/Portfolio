@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Coverimg from '../images/bgg.jpg';
+
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 

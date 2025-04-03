@@ -45,7 +45,7 @@ function Aboutme() {
       {/* Heading */}
       <h2 ref={headref} className="text-4xl md:text-5xl text-center font-bold mb-6 md:mb-10 bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent">
   About Me
-</h2>
+</h2> 
 
       {/* Content Section */}
       <div className="flex flex-col-reverse md:flex-row items-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

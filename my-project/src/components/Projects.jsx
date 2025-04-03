@@ -3,6 +3,7 @@ import med from "../images/medium.png";
 import curr from "../images/curr.png";
 import todo from "../images/todo.png";
 
+import chat from "../images/chat.png";
 function Projects() {
     const projects = [
         {
@@ -20,12 +21,19 @@ function Projects() {
             tags: ["React", "Tailwind", "TypeScript", "MongoDB"]
         },
         {
+            title: "Chat Applicaation",
+            description: "Developed a real-time chat application using WebSockets, enabling instant bidirectional communication.",
+            img: chat,
+            github: "https://github.com/nikhilachale/ChatApplication-",
+            tags: ["React", "Tailwind", "TypeScript,WebSockets"]
+        },
+        {
             title: "Currency Converter",
             description: "A real-time currency converter with exchange rate updates.",
             img: curr,
             github: "https://github.com/nikhilachale/Currency-converter",
             tags: ["React", "Tailwind", "TypeScript"]
-        },
+        }
     ];
 
     return (

@@ -28,7 +28,7 @@ function Experience() {
       opacity: 0,
       y: 100,
       duration: 0.5,
-      stagger: 0.3,
+      stagger: 0.9,
     });
   });
 
