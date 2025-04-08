@@ -7,7 +7,7 @@ function Experience() {
   const cardref = useRef(null);
 
   useGSAP(() => {
-    var tl = gsap.timeline({
+    const tl = gsap.timeline({
       scrollTrigger: {
         trigger: hdref.current,
         start: "top 90%",
@@ -34,36 +34,61 @@ function Experience() {
 
   const experiences = [
     {
+      title: "CDAC Patna",
+      link: "https://cdac.in/index.aspx?id=PT.com",
+      github: "",
+      image: "https://cdac.in/img/C-DAC.jpg",
+      duration: "Feb 2025 – Present",
+      description:
+        "Currently working as a Web Developer Intern at CDAC Patna, where I am involved in a website designing project. My responsibilities include creating and maintaining the website, ensuring its functionality, responsiveness, and user-friendliness.",
+    },
+    {
       title: "The Cab Bro",
       link: "https://thecabbro.com",
       github: "https://github.com/example/thecabbro",
-      image: "https://plus.unsplash.com/premium_vector-1682269851373-65c8474a4f55?q=80&w=3214&auto=format&fit=crop&ixlib=rb-4.0.3",
-      description: "Developed a cab booking platform enabling seamless bookings across India. Integrated a scalable backend with Node.js and MongoDB while designing dynamic UIs using React.js and Tailwind CSS.",
+      image:
+        "https://plus.unsplash.com/premium_vector-1682269851373-65c8474a4f55?q=80&w=3214&auto=format&fit=crop&ixlib=rb-4.0.3",
+      duration: "Nov 2024 – JAN 2025",
+      description:
+        "Developed a cab booking platform enabling seamless bookings across India. Integrated a scalable backend with Node.js and MongoDB while designing dynamic UIs using React.js and Tailwind CSS.",
     },
     {
       title: "Smart and Bright Future Academy",
       link: "https://smartandbrightfutureacademy.com/",
       github: "https://github.com/example/smartacademy",
-      image: "https://plus.unsplash.com/premium_vector-1683134313621-c2aaa27f8c28?q=80&w=2904&auto=format&fit=crop&ixlib=rb-4.0.3",
-      description: "Built an interactive e-learning platform for school students to access lectures and manage lesson plans. Developed a user-friendly and secure interface with HTML, CSS, JavaScript, and WordPress, enabling seamless navigation and payment processing.",
+      image:
+        "https://plus.unsplash.com/premium_vector-1683134313621-c2aaa27f8c28?q=80&w=2904&auto=format&fit=crop&ixlib=rb-4.0.3",
+      duration: "Dec 2023 – Jan 2024",
+      description:
+        "Built an interactive e-learning platform for school students to access lectures and manage lesson plans. Developed a user-friendly and secure interface with HTML, CSS, JavaScript, and WordPress, enabling seamless navigation and payment processing.",
     },
     {
       title: "Leetcode",
       link: "https://leetcode.com/u/nikhilachale/",
       github: "https://github.com/example/leetcode-profile",
-      image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
-      description: "Sharpening problem-solving skills by solving data structure and algorithm challenges on Leetcode.",
+      image:
+        "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3",
+      duration: "Ongoing",
+      description:
+        "Sharpening problem-solving skills by solving data structure and algorithm challenges on Leetcode.",
     },
   ];
+
   return (
     <div className="min-h-screen flex flex-col bg-black px-4 py-10">
       {/* Header Section */}
-      <h2 ref={hdref} className="text-4xl md:text-5xl font-bold text-center mb-8 bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent">
-  Experience
-</h2>
+      <h2
+        ref={hdref}
+        className="text-4xl md:text-5xl font-bold text-center mb-8 bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent"
+      >
+        Experience
+      </h2>
 
       {/* Experience Cards */}
-      <div ref={cardref} className="flex flex-col gap-8 mx-auto w-full max-w-5xl">
+      <div
+        ref={cardref}
+        className="flex flex-col gap-8 mx-auto w-full max-w-5xl"
+      >
         {experiences.map((exp, index) => (
           <div
             key={index}
@@ -77,7 +102,12 @@ function Experience() {
 
             {/* Right Side - Details */}
             <div className="w-full sm:w-2/3 p-6 flex flex-col justify-center">
-              <h3 className="text-2xl font-semibold text-neutral-200">{exp.title}</h3>
+              <h3 className="text-2xl font-semibold text-neutral-200">
+                {exp.title}
+              </h3>
+              <p className="text-sm text-neutral-400 italic">
+                {exp.duration}
+              </p>
               <p className="text-gray-300 mt-2">{exp.description}</p>
 
               {/* Links */}
@@ -90,14 +120,16 @@ function Experience() {
                 >
                   Visit Site
                 </a>
-                <a
-                  href={exp.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-600 hover:underline"
-                >
-                  GitHub Repo
-                </a>
+                {exp.github && (
+                  <a
+                    href={exp.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-600 hover:underline"
+                  >
+                    GitHub Repo
+                  </a>
+                )}
               </div>
             </div>
           </div>
