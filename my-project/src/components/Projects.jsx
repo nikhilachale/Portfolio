@@ -2,39 +2,46 @@ import React from 'react';
 import med from "../images/medium.png";
 import curr from "../images/curr.png";
 import todo from "../images/todo.png";
-
+import exc from "../images/excc.png";
 import chat from "../images/chat.png";
 function Projects() {
-    const projects = [
-        {
-            title: "Medium Clone",
-            description: "A Medium-like blogging platform with authentication and CRUD features.",
-            img: med,
-            github: "https://github.com/nikhilachale/Medium",
-            tags: ["React", "Tailwind", "TypeScript", "Cloudflare", "PostgreSQL", "Prisma"]
-        },
-        {
-            title: "TODO List",
-            description: "A simple and efficient to-do list application.",
-            img: todo,
-            github: "https://github.com/nikhilachale/todolist",
-            tags: ["React", "Tailwind", "TypeScript", "MongoDB"]
-        },
-        {
-            title: "Chat Applicaation",
-            description: "Developed a real-time chat application using WebSockets, enabling instant bidirectional communication.",
-            img: chat,
-            github: "https://github.com/nikhilachale/ChatApplication-",
-            tags: ["React", "Tailwind", "TypeScript,WebSockets"]
-        },
-        {
-            title: "Currency Converter",
-            description: "A real-time currency converter with exchange rate updates.",
-            img: curr,
-            github: "https://github.com/nikhilachale/Currency-converter",
-            tags: ["React", "Tailwind", "TypeScript"]
-        }
-    ];
+   const projects = [
+    {
+        title: "Medium Clone",
+        description: "A Medium-like blogging platform with authentication and CRUD features.",
+        img: med,
+        github: "https://github.com/nikhilachale/Medium",
+        tags: ["React", "Tailwind", "TypeScript", "Cloudflare", "PostgreSQL", "Prisma"]
+    },
+    {
+        title: "TODO List",
+        description: "A simple and efficient to-do list application.",
+        img: todo,
+        github: "https://github.com/nikhilachale/todolist",
+        tags: ["React", "Tailwind", "TypeScript", "MongoDB"]
+    },
+    {
+        title: "Chat Application",
+        description: "Developed a real-time chat application using WebSockets, enabling instant bidirectional communication.",
+        img: chat,
+        github: "https://github.com/nikhilachale/ChatApplication-",
+        tags: ["React", "Tailwind", "TypeScript", "WebSockets"]
+    },
+    {
+        title: "Currency Converter",
+        description: "A real-time currency converter with exchange rate updates.",
+        img: curr,
+        github: "https://github.com/nikhilachale/Currency-converter",
+        tags: ["React", "Tailwind", "TypeScript"]
+    },
+    {
+        title: "Excalidraw Clone",
+        description: "A collaborative whiteboard tool mimicking Excalidraw, built for real-time visual ideation and sketching.",
+        img: exc, 
+        github: "https://github.com/nikhilachale/Excalidraw",
+        tags: ["React", "Tailwind", "TypeScript", "Canvas", "Realtime"]
+    }
+];
 
     return (
         <div className="w-full px-4 py-10">
