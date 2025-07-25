@@ -4,8 +4,17 @@ import curr from "../images/curr.png";
 import todo from "../images/todo.png";
 import exc from "../images/excc.png";
 import chat from "../images/chat.png";
+import mudra from "../images/mudrax.png"; // make sure you have this image
+
 function Projects() {
    const projects = [
+    {
+        title: "MudraX",
+        description: "A Solana-based Web3 DApp to generate HD wallets, request SOL airdrops, sign messages, and transfer tokens with both mnemonic and wallet adapter support.",
+        img: mudra,
+        github: "https://github.com/nikhilachale/MudraX",
+        tags: ["React", "Tailwind", "TypeScript", "Solana", "Web3", "Wallet Adapter", "bip39"]
+    },
     {
         title: "Medium Clone",
         description: "A Medium-like blogging platform with authentication and CRUD features.",
@@ -45,12 +54,12 @@ function Projects() {
 
     return (
         <div className="w-full px-4 py-10">
-<h2 className="text-4xl md:text-5xl font-bold text-center mb-8 bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent">
-  Projects
-</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent">
+                Projects
+            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
-                    <div key={index} className=" rounded-lg p-4 shadow-md bg-gray-900">
+                    <div key={index} className="rounded-lg p-4 shadow-md bg-gray-900">
                         <img 
                             src={project.img} 
                             alt={project.title} 
