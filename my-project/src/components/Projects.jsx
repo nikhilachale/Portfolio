@@ -5,9 +5,25 @@ import todo from "../images/todo.png";
 import exc from "../images/excc.png";
 import chat from "../images/chat.png";
 import mudra from "../images/mudrax.png"; // make sure you have this image
+import chessImg from "../images/chess.png"; // make sure you have this image
+import tttImg from "../images/xo.png"; // make sure you have this image
 
 function Projects() {
    const projects = [
+    {
+    title: "Realtime Chess",
+    description: "A real-time multiplayer Chess game with live WebSocket-based gameplay, context state management, and interactive UI built with React and Tailwind.",
+    img: chessImg, // replace with your chess screenshot/image
+    github: "https://github.com/nikhilachale/Chess",
+    tags: ["React", "Tailwind", "TypeScript", "WebSocket", "Context API"]
+},
+{
+    title: "XOXO Clash",
+    description: "A real-time multiplayer Tic Tac Toe game built with React and WebSockets, supporting live moves and persistent game state.",
+    img: tttImg, // replace with your Tic Tac Toe screenshot/image
+    github: "https://github.com/nikhilachale/XOXO-Clash",
+    tags: ["React", "Tailwind", "TypeScript", "WebSocket", "Context API"]
+},
     {
         title: "MudraX",
         description: "A Solana-based Web3 DApp to generate HD wallets, request SOL airdrops, sign messages, and transfer tokens with both mnemonic and wallet adapter support.",
