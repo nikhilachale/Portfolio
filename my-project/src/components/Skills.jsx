@@ -36,7 +36,7 @@ function Skills() {
       
       {/* Animated Skills Section - Desktop Only */}
       <div ref={ref} className="hidden md:block relative">
-        <div className="text-7xl lg:text-8xl font-extrabold fixed right-20 lg:right-40 uppercase bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
+          <div className="text-6xl md:text-7xl lg:text-8xl font-extrabold fixed right-20 lg:right-40 uppercase bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent leading-tight">
           <h1>Skills</h1>
         </div>
         <div className="box flex space-x-8 mt-20">
@@ -59,7 +59,7 @@ function Skills() {
 
       {/* Static Grid Layout for Mobile & Tablets */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 p-6 md:hidden relative">
-        <div className="col-span-full text-center text-5xl font-extrabold uppercase mb-8 bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
+          <div className="col-span-full text-center text-3xl font-bold uppercase mb-4 sm:mb-8 bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent leading-tight">
           <h1>Skills</h1>
         </div>
         {skills.map((skill, index) => (

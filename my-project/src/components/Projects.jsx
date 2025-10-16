@@ -149,13 +149,12 @@ function Projects() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
             Projects
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-neutral-500 to-neutral-100 mx-auto rounded-full mb-6"></div>
-          <p className="text-xl md:text-2xl text-neutral-400 max-w-3xl mx-auto">
-            A collection of projects that showcase my skills in full-stack development, 
-            real-time applications, and modern web technologies.
+          <p className="text-base md:text-lg text-neutral-400 max-w-3xl mx-auto">
+            A collection of projects that showcase my skills in full-stack development, real-time applications, and modern web technologies.
           </p>
         </motion.div>
 
@@ -177,7 +176,7 @@ function Projects() {
             >
               {/* Project Info */}
               <motion.div
-                className={`space-y-6 ${
+                className={`space-y-5 ${
                   index % 2 === 1 ? 'lg:col-start-2' : ''
                 }`}
                 initial={{
@@ -195,22 +194,22 @@ function Projects() {
                 }}
               >
                 <div className="space-y-4">
-                  <div className="flex items-center gap-3 flex-wrap">
-                    <span className="text-neutral-400 font-semibold text-sm uppercase tracking-wide">
+                  <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+                    <span className="text-neutral-400 font-medium text-xs sm:text-sm uppercase tracking-wide">
                       {project.category}
                     </span>
                     {project.featured && (
-                      <span className="bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 border border-neutral-500/50 text-neutral-200 px-4 py-1 rounded-full text-sm font-medium">
+                      <span className="bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 border border-neutral-500/50 text-neutral-200 px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-medium">
                         ⭐ Featured
                       </span>
                     )}
                   </div>
 
-                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-neutral-200 to-neutral-400 bg-clip-text text-transparent">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight bg-gradient-to-r from-neutral-200 to-neutral-400 bg-clip-text text-transparent">
                     {project.title}
                   </h3>
 
-                  <p className="text-neutral-300 text-lg md:text-xl leading-relaxed">
+                  <p className="text-neutral-400 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
                     {project.longDescription}
                   </p>
                 </div>
@@ -330,7 +329,7 @@ function Projects() {
                 delay: 0.9,
                 ease: 'backOut',
               }}
-              className="absolute top-[15%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-400 rounded-full shadow-lg shadow-neutral-400/50"
+              className="absolute top-[13%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-400 rounded-full shadow-lg shadow-neutral-400/50"
             />
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
@@ -344,7 +343,7 @@ function Projects() {
                 delay: 1.2,
                 ease: 'backOut',
               }}
-              className="absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-neutral-300 rounded-full shadow-md shadow-neutral-300/50"
+              className="absolute top-[28%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-300 rounded-full shadow-md shadow-neutral-300/50"
             />
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
@@ -358,7 +357,7 @@ function Projects() {
                 delay: 1.6,
                 ease: 'backOut',
               }}
-              className="absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2.5 h-2.5 bg-neutral-400 rounded-full shadow-xl shadow-neutral-400/60"
+              className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-400 rounded-full shadow-xl shadow-neutral-400/60"
             />
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
@@ -372,7 +371,7 @@ function Projects() {
                 delay: 2.0,
                 ease: 'backOut',
               }}
-              className="absolute top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-neutral-300 rounded-full shadow-md shadow-neutral-300/50"
+              className="absolute top-[61%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-300 rounded-full shadow-md shadow-neutral-300/50"
             />
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
@@ -386,7 +385,7 @@ function Projects() {
                 delay: 2.4,
                 ease: 'backOut',
               }}
-              className="absolute top-[85%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-400 rounded-full shadow-lg shadow-neutral-400/50"
+              className="absolute top-[76%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-400 rounded-full shadow-lg shadow-neutral-400/50"
             />
           </motion.div>
         </motion.div>

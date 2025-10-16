@@ -57,24 +57,28 @@ function Aboutme() {
         </div>
 
         {/* Content Section */}
-        <div className="flex flex-col-reverse md:flex-row items-center gap-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Text Section */}
           <div ref={textref} className="w-full md:w-2/3 text-center md:text-left">
-            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-neutral-300">
-              I'm <span className="font-semibold bg-gradient-to-r from-neutral-300 to-neutral-100 bg-clip-text text-transparent">Nikhil Achale</span>, a passionate MERN stack developer from NIT Patna. I specialize in building dynamic, responsive web applications using MongoDB, Express.js, React, and Node.js.
-              <br /><br />
-              I love solving complex problems and bringing ideas to life through clean, efficient code. I'm always eager to learn new technologies and stay updated with the latest trends in web development.
-            </p>
+           <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-neutral-400">
+  I'm <span className="font-semibold text-neutral-100">Nikhil Achale</span>, a <span className="text-neutral-100 font-medium">MERN Stack Developer</span> and final-year Computer Science student at <span className="text-neutral-100 font-medium">NIT Patna</span>.  
+  <br /><br />
+  I specialize in crafting <span className="text-neutral-100 font-medium">scalable, high-performance web applications</span> using <span className="text-neutral-100">MongoDB, Express.js, React, and Node.js</span>.  
+  <br /><br />
+  My core strengths include <span className="text-neutral-100">clean UI architecture, efficient state management,</span> and <span className="text-neutral-100">RESTful API integration</span>. I enjoy transforming complex problems into elegant, user-focused solutions.  
+  <br /><br />
+  I m constantly exploring <span className="text-neutral-100">new technologies</span> — from <span className="text-neutral-100">Next.js and Prisma</span> to <span className="text-neutral-100">machine learning integrations</span> — and I thrive in environments that push innovation and growth.
+</p>
           </div>
 
           {/* Image Section */}
           <div ref={imgref} className="w-full md:w-1/3 flex justify-center md:justify-end mb-6 md:mb-0">
             <div className="relative group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-neutral-500 to-neutral-300 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-neutral-500 to-neutral-300 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:scale-110"></div>
               <img
                 src={Me}
                 alt="Nikhil Achale"
-                className="relative rounded-full w-48 sm:w-60 md:w-64 lg:w-72 xl:w-80 h-48 sm:h-60 md:h-64 lg:h-72 xl:h-80 object-cover shadow-2xl border-4 border-neutral-800"
+                className="relative rounded-full w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72 object-cover shadow-2xl border-4 border-neutral-800 group-hover:border-neutral-600 transition-all duration-500"
               />
             </div>
           </div>

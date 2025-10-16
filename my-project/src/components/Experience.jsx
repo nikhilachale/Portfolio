@@ -85,7 +85,7 @@ function Experience() {
       <div className="text-center mb-20 relative z-10">
         <h2
           ref={hdref}
-          className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent"
         >
           Experience
         </h2>
