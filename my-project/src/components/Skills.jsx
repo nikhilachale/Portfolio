@@ -30,20 +30,26 @@ function Skills() {
   }, []);
 
   return (
-    <div className="bg-black text-neutral-200 min-h-screen overflow-x-hidden">
+    <div className="bg-black text-neutral-200 min-h-screen overflow-x-hidden relative">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-950/5 to-transparent"></div>
+      
       {/* Animated Skills Section - Desktop Only */}
-      <div ref={ref} className="hidden md:block">
-      <div className="text-7xl font-extrabold fixed right-40 uppercase bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent">
-  <h1>Skills</h1>
-</div>
+      <div ref={ref} className="hidden md:block relative">
+        <div className="text-7xl lg:text-8xl font-extrabold fixed right-20 lg:right-40 uppercase bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
+          <h1>Skills</h1>
+        </div>
         <div className="box flex space-x-8 mt-20">
           {skills.map((skill, index) => (
             <div 
               key={index} 
-              className="card bg-black p-4 rounded-lg shadow-lg hover:scale-105 transition-all duration-300"
+              className="card bg-gradient-to-br from-neutral-900 to-black border border-neutral-800 p-6 rounded-2xl shadow-2xl hover:scale-110 hover:shadow-neutral-500/20 transition-all duration-300 group"
             >
-              <img src={skill.icon} alt={skill.name} className="w-20 h-20" />
-              <h3 className="text-neutral-200 text-lg font-semibold mt-2">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-neutral-500/10 to-neutral-300/10 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <img src={skill.icon} alt={skill.name} className="w-24 h-24 relative" />
+              </div>
+              <h3 className="text-neutral-200 text-xl font-semibold mt-4 group-hover:text-white transition-colors">
                 {skill.name}
               </h3>
             </div>
@@ -52,17 +58,20 @@ function Skills() {
       </div>
 
       {/* Static Grid Layout for Mobile & Tablets */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 p-6 md:hidden">
-      <div className="col-span-full text-center text-4xl font-extrabold uppercase mb-4 bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent">
-  <h1>Skills</h1>
-</div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 p-6 md:hidden relative">
+        <div className="col-span-full text-center text-5xl font-extrabold uppercase mb-8 bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent">
+          <h1>Skills</h1>
+        </div>
         {skills.map((skill, index) => (
           <div 
             key={index} 
-            className="flex flex-col items-center space-y-2 bg-black shadow-lg p-4 rounded-lg hover:scale-105 transition-all duration-300"
+            className="flex flex-col items-center space-y-3 bg-gradient-to-br from-neutral-900 to-black border border-neutral-800 shadow-2xl p-6 rounded-2xl hover:scale-105 hover:shadow-neutral-500/20 transition-all duration-300 group"
           >
-            <img src={skill.icon} alt={skill.name} className="w-16 h-16" />
-            <h3 className="text-neutral-200 text-lg font-semibold">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-neutral-500/10 to-neutral-300/10 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <img src={skill.icon} alt={skill.name} className="w-20 h-20 relative" />
+            </div>
+            <h3 className="text-neutral-200 text-lg font-semibold group-hover:text-white transition-colors">
               {skill.name}
             </h3>
           </div>

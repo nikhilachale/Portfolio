@@ -19,11 +19,11 @@ function Header() {
     })
 
   return (
-    <nav className="bg-black shadow-md">
+    <nav className="bg-black shadow-lg border-b border-neutral-800/50 backdrop-blur-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
 
-        <h1 ref={portref} className="text-3xl font-bold bg-gradient-to-r from-neutral-500 to-neutral-100 bg-clip-text text-transparent">
+        <h1 ref={portref} className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent tracking-tight">
   Portfolio
 </h1>
 
