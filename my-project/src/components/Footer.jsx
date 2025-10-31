@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp, FaHeart, FaArrowUp, FaMapMarkerAlt, FaDownload } from 'react-icons/fa';
 
-const resumeDownloadLink = "https://drive.google.com/file/d/1sh6S-4UWksgaM-Rfn8a44AN-u6gHdXNY/view?usp=sharing"; // Update with your resume link
+const resumeDownloadLink = "https://drive.google.com/file/d/1m7WWsuvLnf1gmVWS_o441RX-FFSNKa1-/view?usp=sharing"; // Update with your resume link
 
 const socialLinks = [
   {
