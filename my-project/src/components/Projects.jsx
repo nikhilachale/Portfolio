@@ -1,12 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import { FaCirclePlus } from 'react-icons/fa6';
-import med from "../images/medium.png";
-import curr from "../images/curr.png";
-import todo from "../images/todo.png";
 import exc from "../images/excc.png";
-import chat from "../images/chat.png";
 import mudra from "../images/mudrax.png";
 import chessImg from "../images/chess.png";
 import tttImg from "../images/xo.png";
@@ -38,7 +33,7 @@ function Projects() {
       longDescription: "A real-time multiplayer Chess game with live WebSocket-based gameplay, context state management, and interactive UI. Features include move validation, game state persistence, and an intuitive interface for seamless gameplay experience.",
       img: chessImg,
       github: "https://github.com/nikhilachale/Chess",
-      live: null,
+      live: "https://chesss.thecabbro.com/",
       tags: ["React", "Tailwind", "TypeScript", "WebSocket", "Context API"],
       category: "Real-time Gaming",
       featured: true,
@@ -50,7 +45,7 @@ function Projects() {
       longDescription: "A real-time multiplayer Tic Tac Toe game built with React and WebSockets. Players can compete in live matches with instant move synchronization and persistent game state tracking for an engaging gaming experience.",
       img: tttImg,
       github: "https://github.com/nikhilachale/XOXO-Clash",
-      live: "https://xoxo-clash-mu.vercel.app/",
+      live: null,
       tags: ["React", "Tailwind", "TypeScript", "WebSocket", "Context API"],
       category: "Real-time Gaming",
       featured: true,
@@ -67,21 +62,10 @@ function Projects() {
       category: "Web3 Application",
       featured: true,
     },
-    {
-      id: 4,
-      title: "Medium Clone",
-      description: "A Medium-like blogging platform with authentication and CRUD features.",
-      longDescription: "A feature-rich blogging platform inspired by Medium, complete with user authentication, article creation, editing, and deletion capabilities. Built with modern web technologies for optimal performance.",
-      img: med,
-      github: "https://github.com/nikhilachale/Medium",
-      live: "https://cohort-omega.vercel.app/",
-      tags: ["React", "Tailwind", "TypeScript", "Cloudflare", "PostgreSQL", "Prisma"],
-      category: "Full Stack",
-      featured: false,
-    },
+    
     
     {
-      id: 5,
+      id: 4,
       title: "Excalidraw Clone",
       description: "A collaborative whiteboard tool mimicking Excalidraw, built for real-time visual ideation and sketching.",
       longDescription: "A collaborative whiteboard tool inspired by Excalidraw, designed for real-time visual ideation and sketching. Perfect for brainstorming sessions and creative collaboration with an intuitive drawing interface.",
@@ -329,7 +313,7 @@ function Projects() {
                 delay: 0.9,
                 ease: 'backOut',
               }}
-              className="absolute top-[13%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-400 rounded-full shadow-lg shadow-neutral-400/50"
+              className="absolute top-[17%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-400 rounded-full shadow-lg shadow-neutral-400/50"
             />
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
@@ -343,7 +327,7 @@ function Projects() {
                 delay: 1.2,
                 ease: 'backOut',
               }}
-              className="absolute top-[28%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-300 rounded-full shadow-md shadow-neutral-300/50"
+              className="absolute top-[36%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-300 rounded-full shadow-md shadow-neutral-300/50"
             />
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
@@ -357,7 +341,7 @@ function Projects() {
                 delay: 1.6,
                 ease: 'backOut',
               }}
-              className="absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-400 rounded-full shadow-xl shadow-neutral-400/60"
+              className="absolute top-[56%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-400 rounded-full shadow-xl shadow-neutral-400/60"
             />
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
@@ -371,48 +355,13 @@ function Projects() {
                 delay: 2.0,
                 ease: 'backOut',
               }}
-              className="absolute top-[61%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-300 rounded-full shadow-md shadow-neutral-300/50"
+              className="absolute top-[76%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-300 rounded-full shadow-md shadow-neutral-300/50"
             />
-            <motion.div
-              initial={{ scale: 0, opacity: 0 }}
-              animate={
-                lineActive
-                  ? { scale: 1, opacity: 1 }
-                  : { scale: 0, opacity: 0 }
-              }
-              transition={{
-                duration: 0.6,
-                delay: 2.4,
-                ease: 'backOut',
-              }}
-              className="absolute top-[76%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-neutral-400 rounded-full shadow-lg shadow-neutral-400/50"
-            />
+           
           </motion.div>
         </motion.div>
 
-        {/* View More Projects */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-center mt-20"
-        >
-          <motion.a
-            href="https://github.com/nikhilachale"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-3 text-neutral-300 hover:text-neutral-100 font-semibold text-xl transition-colors duration-300 group"
-          >
-            <span className="relative">
-              View More Projects
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-neutral-500 to-neutral-300 group-hover:w-full transition-all duration-300"></span>
-            </span>
-            <FaCirclePlus className="w-5 h-5 group-hover:rotate-90 transition-transform duration-300" />
-          </motion.a>
-        </motion.div>
+      
       </div>
     </section>
   );
