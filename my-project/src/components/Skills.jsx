@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
+import { useMemo, useRef } from "react";
+import { motion } from "framer-motion";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -10,8 +11,28 @@ import "./style.css";
 function Skills() {
   const ref = useRef(null);
 
+  const mobileCardVariants = useMemo(
+    () => ({
+      hidden: { opacity: 0, y: 24 },
+      visible: (
+        custom => ({
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.35,
+            ease: "easeOut",
+            delay: custom * 0.08,
+          },
+        })
+      ),
+    }),
+    []
+  );
+
   useGSAP(() => {
-    if (window.innerWidth >= 768) { // Apply animation only on desktop
+    if (typeof window === "undefined") return; // Avoid SSR issues
+    if (window.innerWidth >= 768) {
+      // Apply marquee-style scrub animation on larger screens only
       gsap.to(ref.current, {
         x: "-210%",
         opacity: 1,
@@ -58,14 +79,25 @@ function Skills() {
       </div>
 
       {/* Static Grid Layout for Mobile & Tablets */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 p-6 md:hidden relative">
-          <div className="col-span-full text-center text-3xl font-bold uppercase mb-4 sm:mb-8 bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent leading-tight">
+      <motion.div
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 p-6 md:hidden relative"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <motion.div
+          className="col-span-full text-center text-3xl font-bold uppercase mb-4 sm:mb-8 bg-gradient-to-r from-neutral-400 via-neutral-200 to-neutral-400 bg-clip-text text-transparent leading-tight"
+          variants={mobileCardVariants}
+          custom={0}
+        >
           <h1>Skills</h1>
-        </div>
+        </motion.div>
         {skills.map((skill, index) => (
-          <div 
-            key={index} 
+          <motion.div
+            key={index}
             className="flex flex-col items-center space-y-3 bg-gradient-to-br from-neutral-900 to-black border border-neutral-800 shadow-2xl p-6 rounded-2xl hover:scale-105 hover:shadow-neutral-500/20 transition-all duration-300 group"
+            variants={mobileCardVariants}
+            custom={index + 1}
           >
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-neutral-500/10 to-neutral-300/10 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -74,9 +106,9 @@ function Skills() {
             <h3 className="text-neutral-200 text-lg font-semibold group-hover:text-white transition-colors">
               {skill.name}
             </h3>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
