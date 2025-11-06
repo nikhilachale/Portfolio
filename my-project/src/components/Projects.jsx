@@ -45,7 +45,7 @@ function Projects() {
       longDescription: "A real-time multiplayer Tic Tac Toe game built with React and WebSockets. Players can compete in live matches with instant move synchronization and persistent game state tracking for an engaging gaming experience.",
       img: tttImg,
       github: "https://github.com/nikhilachale/XOXO-Clash",
-      live: null,
+      live: "https://xoxo-clash-mu.vercel.app/",
       tags: ["React", "Tailwind", "TypeScript", "WebSocket", "Context API"],
       category: "Real-time Gaming",
       featured: true,
