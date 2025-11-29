@@ -70,7 +70,7 @@ function Projects() {
       longDescription: "A collaborative whiteboard tool inspired by Excalidraw, designed for real-time visual ideation and sketching. Perfect for brainstorming sessions and creative collaboration with an intuitive drawing interface.",
       img: exc,
       github: "https://github.com/nikhilachale/Excalidraw",
-      live: null,
+      live: "https://canvas-ui.onrender.com/",
       tags: ["React", "Tailwind", "TypeScript", "Canvas", "Realtime"],
       category: "Creative Tools",
       featured: false,
