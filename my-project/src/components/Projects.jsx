@@ -54,7 +54,7 @@ function Projects() {
   id: 3,
   title: "MudraX",
   description: "A Solana-powered Web3 DApp to create HD wallets, mint tokens, transfer SOL, and interact with the blockchain — with built-in Launchpad and local wallet integration.",
-  longDescription: "MudraX is an end-to-end Solana Web3 application that enables users to create secure Hierarchical Deterministic (HD) wallets, mint SPL tokens with metadata via an integrated Token Launchpad, request SOL airdrops, sign on-chain messages, and transfer tokens seamlessly. It supports both mnemonic-based local wallet generation (without extensions) and Solana Wallet Adapter integrations (e.g., Phantom) — allowing users to connect their self-generated wallets directly to the DApp. The Launchpad module allows users to create their own SPL-2022 tokens with metadata, token accounts, and initial mint supply in a few clicks. Built with React, TypeScript, Tailwind, and Solana Web3 SDK, MudraX offers a clean, modern UI and a smooth blockchain experience for both beginners and developers.",
+  longDescription: "MudraX is a Solana Web3 app that lets users create HD wallets, mint SPL tokens, request airdrops, sign messages, and transfer tokens — all in one place. It supports both local mnemonic wallets and Phantom via Wallet Adapter. Built with React, TS, Tailwind, and Solana Web3 SDK for a smooth, modern experience.",
   img: mudra,
   github: "https://github.com/nikhilachale/MudraX",
   live: "https://mudrax.vercel.app/",
