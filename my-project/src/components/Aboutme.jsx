@@ -61,13 +61,13 @@ function Aboutme() {
           {/* Text Section */}
           <div ref={textref} className="w-full md:w-2/3 text-center md:text-left">
            <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-neutral-400">
-  I'm <span className="font-semibold text-neutral-100">Nikhil Achale</span>, a <span className="text-neutral-100 font-medium">MERN Stack Developer</span> and final-year Computer Science student at <span className="text-neutral-100 font-medium">NIT Patna</span>.  
+  I'm <span className="font-semibold text-neutral-100">Nikhil Achale</span>, a <span className="text-neutral-100 font-medium">Full Stack Developer</span> and final-year Computer Science student at <span className="text-neutral-100 font-medium">NIT Patna</span>.
   <br /><br />
-  I specialize in crafting <span className="text-neutral-100 font-medium">scalable, high-performance web applications</span> using <span className="text-neutral-100">MongoDB, Express.js, React, and Node.js</span>.  
+  I build <span className="text-neutral-100 font-medium">scalable, high-performance web applications</span> with a strong focus on <span className="text-neutral-100">real-time systems, backend logic, and modern frontend architectures</span>. My work spans across <span className="text-neutral-100">Node.js, WebSockets, React, Next.js, and databases</span>.
   <br /><br />
-  My core strengths include <span className="text-neutral-100">clean UI architecture, efficient state management,</span> and <span className="text-neutral-100">RESTful API integration</span>. I enjoy transforming complex problems into elegant, user-focused solutions.  
+  I have hands-on experience developing <span className="text-neutral-100">real-time multiplayer applications</span>, collaborative tools, and <span className="text-neutral-100">Web3 integrations</span> including wallets and smart contract interactions on <span className="text-neutral-100">Ethereum and Solana</span>.
   <br /><br />
-  I m constantly exploring <span className="text-neutral-100">new technologies</span> — from <span className="text-neutral-100">Next.js and Prisma</span> to <span className="text-neutral-100">machine learning integrations</span> — and I thrive in environments that push innovation and growth.
+  I value <span className="text-neutral-100">clean system design, performance optimization,</span> and <span className="text-neutral-100">writing maintainable code</span>. I enjoy solving complex problems and turning them into reliable, user-focused products, while continuously exploring new technologies that push both scalability and innovation.
 </p>
           </div>
 
